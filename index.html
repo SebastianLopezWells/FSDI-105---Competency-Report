@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/48cadd1d3e.js" crossorigin="anonymous"></script>
+    <title>Pet Salon</title>
+</head>
+<body>
+    <header>
+        
+        <nav class="nav justify-content-center color-gray-nav">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="register.html">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " aria-current="page" href="admin.html">Admin</a>
+                </li>
+            </ul>    
+        </nav>
+        <h1 class="display-1 neg-margin">Pet Salon</h1>
+    </header>
+
+    <main>
+            
+        <div class=" index-container">
+            <h1 class="display-1 neg-margin hidden">Pet Salon</h1>
+            <p class="text-center tagline big">"Need someone to take care of your pet?, Don't worry we got you"</p>
+            <section id="container-slider" >	
+                <a href="javascript: fntExecuteSlide('prev');" class="arrowPrev"><i class="fas fa-chevron-circle-left"></i></a>
+                <a href="javascript: fntExecuteSlide('next');" class="arrowNext"><i class="fas fa-chevron-circle-right"></i></a>
+                <ul class="listslider">
+                    <li><a itlist="itList_0" href="#" class="item-select-slid"></a></li>
+                    <li><a itlist="itList_1" href="#"></a></li>
+                    <li><a itlist="itList_2" href="#"></a></li>
+                </ul>
+                <ul id="slider">
+                    <li style="background-image: url('https://img.freepik.com/premium-photo/dog-gets-hair-cut-pet-spa-grooming-salon_170532-240.jpg?w=2000'); z-index:0; opacity: 1;">
+                        <div class="content_slider" >
+                            <div>
+                                <h2>Grooming</h2>
+                                <p>We groom your pets for the cheap price of 14$ USD</p>
+                                <a href="#Grooming" class="btnSlider">See more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url('https://elpetshop.pe/wp-content/uploads/2021/11/pet-grooming.jpg'); ">
+                        <div class="content_slider" >
+                            <div>
+                            <h2>Bathing</h2>
+                            <p>We bath and take care of your pets 10$ USD</p>
+                            <a href="#Bathing" class="btnSlider">See more</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li style="background-image: url('https://www.thelabradorsite.com/wp-content/uploads/2017/04/Choosing-and-using-dog-nail-clippers-LS-long.jpg'); ">
+                        <div class="content_slider" >
+                            <div>
+                            <h2>Nail Clipping</h2>
+                            <p>We cut clean the nails of the pet for 6$ USD</p>
+                            <a href="#nailClipping" class="btnSlider">See more</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            
+        </div>
+        <div class="line"></div>
+        <div class="Service-container">
+            <h1 class="text-center display-1 neg-margin normal-margin"> Services</h1>
+            <div class="info-container">
+                <div id="Grooming" class="info-index">
+                    <h2>Grooming</h2>
+                    <p>Whats gromming? Well, Grooming is the practice of brushing and cleaning the coat of a horse, dog, or other animal.</p>
+                    <p>Why is important to groom your pets? "regular grooming is essential to the well-being of your dog" said by some wise person.</p>
+                    <p>Cost: 14$ USD</p>
+                </div>
+                <div id="Bathing" class="info-index">
+                    <h2>Bathing</h2>
+                    <p>Ww will take care of a long estylized Bathing treatment where we take care of the dos neads.</p>
+                    <p>A more suitable opction if you need your dog to look clean and fresh</p>
+                    <p>Cost: 10$ USD</p>
+                </div>
+                <div id="nailClipping" class="info-index">
+                    <h2>Nail Clipping</h2>
+                    <p>Like the name says, we clip the nails of your dog with extra care and love.</p>
+                    <p>Done by our own Nail Clipper specialist.</p>
+                    <p>Cost: 6$ USD</p>
+                </div>
+                
+            </div>
+            <a class="btn btn-dark marg-center" aria-current="page" href="register.html" >Register</a>
+        </div>
+    </main>
+
+        <footer class="nav-footer nav-justified">
+        <nav class="footer-nav">
+            <p class="text-center">All copyrigths reserved Sebastian Wells <i class="fa-solid fa-copyright"></i> 2022</p>
+        </nav>
+    </footer>
+    <script src="Js\function.js"></script>
+</body>
+</html>

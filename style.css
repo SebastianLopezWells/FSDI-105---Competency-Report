@@ -1,0 +1,453 @@
+/*fonts to use in the page*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600&family=Roboto+Slab:wght@400;700&display=swap');
+/*Headers*/
+.display-1{
+    text-align: center;
+    margin-top: 25px;
+}
+.text-center{
+    margin-left: 30px;
+}
+/* Nav & footer*/
+.nav-tabs{
+    --bs-nav-tabs-border-width: 12px
+    
+}
+.nav-footer{
+    background-color: rgb(39, 43, 39);
+    padding:35px;
+}
+
+.footer-nav{
+    background-color: aliceblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+footer{
+    color: #6a08a7;
+}
+.color-gray-nav{
+    background-color: rgb(39, 43, 39);
+    padding-top: 25px;
+}
+
+/*Main parts of the html structure */
+
+
+body{
+    background-color: blanchedalmond;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container-S{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding: 12px;
+}
+
+/*register pets*/
+.pets-container{
+    margin: 55px;
+}
+.pets{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+.pet{
+    border: 2px solid goldenrod;
+    background-color: bisque;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+.data-container{
+    margin-top: 55px;
+    padding: 55px;
+    background-color: goldenrod;
+    border-radius: 125px;
+    margin-bottom: 3rem;
+}
+.table{
+    border-color: rgb(3, 3, 2);
+    background-color: bisque;
+    width: 1200px;
+    margin-top: 25px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.selected{
+    background-color:  whitesmoke;
+    border: 20px solid darkgoldenrod;
+}
+
+.selected  td .btn{
+    background-color: rgb(219, 174, 24);
+    border-color: rgb(219, 174, 24);
+    color: rgb(0, 0, 0);
+}
+    /*Margin for pets*/
+    .lesser-margin{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 900px;
+        padding: 55px;
+        background-color: #ffd6d6;
+        margin-top: 3rem;
+    }
+
+    .lesser-top-margin{
+        margin-top: 35px;
+    }
+    /*end of margin for pets*/
+.col-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*End of Pets*/
+
+/*Index*/
+.neg-margin{
+    margin-top: -175px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+.index-container{
+    margin: 20px 75px 0 75px;
+    padding: 305px;
+    border-radius: 1925px;
+    background-color: rgb(243, 190, 55);
+}
+.Service-container{
+    padding: 115px;
+    margin: 20px 75px 20px 75px;
+    border-radius: 25px;
+    background-color:#f7983d;
+}
+.info-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 1rem;
+    row-gap: 1rem;
+    padding: 2rem;
+}
+.info-index{
+    border: 2px solid goldenrod;
+    background-color: bisque;
+    padding: 1rem;
+    border-radius: 12px;
+    margin-top: 12px;
+}
+.marg-center{
+    margin-left: 48%;
+}
+
+.normal-margin{
+    margin-top: 50px;
+}
+
+.line{
+    padding-left: 0;
+    height: 0;
+}
+/*End of index section*/
+
+/*About us*/
+.tagline{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 45px;
+}
+
+.sm{
+    font-size: 24px;
+}
+.container-about{
+    display: flex;
+    align-items: center;
+}
+.container-about-us{
+    padding: 50px;
+    background-color: darkgoldenrod;
+    border-radius: 25px;
+    margin: 25px;
+}
+h2.text-center{
+    padding: 12px;
+    color: aliceblue;
+}
+.img-about-us{
+    padding: 1rem;
+    background-color: #272b27;
+    border-radius: 1rem;
+    width: 540px;
+}
+.img{
+    margin: 5px;
+    
+}
+.list-group-item{
+    background-color: blanchedalmond;
+}
+.container-img{
+    margin-right: 25px;
+}
+/*Start of the Carousel section*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container-slider
+{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+#slider {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    min-height: 500px;
+}
+#slider li {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100%;
+    height: 100%;
+    display: block;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    z-index: -1;
+    opacity: 0;
+}
+#container-slider .arrowPrev, #container-slider .arrowNext{
+    font-size: 30pt;
+    color: rgba(204, 204, 204, 0.65);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    z-index: 2; 
+}
+#container-slider .arrowNext {
+    left: initial;
+    right: 50px !important;
+}
+.content_slider{
+    padding: 15px 30px;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+}
+.content_slider div{
+    text-align: center;
+}
+.content_slider h2{
+    font-family: 'arial';
+    font-size: 30pt;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.content_slider p {
+    font-size: 15pt;
+    font-family: 'arial';
+    color: #FFF;
+    margin-bottom: 20px;
+}
+#slider li .content_slider{
+    background: rgba(0, 0, 0, 0.50);
+    padding: 10px 125px;
+}
+.content_slider{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btnSlider{
+    color: #FFF;
+    font-size: 15pt;
+    font-family: 'arial';
+    letter-spacing: 1px;
+    padding: 10px 50px;
+    border: 1px solid #CCC;
+    background: rgba(13, 13, 13, 0.55);
+    border-radius: 31px;
+    text-decoration: none;
+    transition: .5s all;
+}
+.btnSlider:hover{
+    background: #111;
+    border: 1px solid #111;
+}
+.listslider {
+    position: absolute;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 50%;
+    bottom: 5%;
+    list-style: none;
+    z-index: 2;
+    transform: translateX(-50%);
+}
+.listslider li {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.listslider li a {
+    background: #CCC;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.item-select-slid {
+    background: #FFF  !important;
+}
+
+@media screen and (max-width: 950px){
+	.content_slider h2 {
+	    font-size: 15pt !important;
+	}
+	.content_slider p {
+	    font-size: 12pt !important;
+	}
+	#container-slider .arrowPrev, #container-slider .arrowNext{
+		font-size: 20pt;
+	}
+	#container-slider .arrowPrev{
+		left: 15px;
+	}
+	#container-slider .arrowNext{
+		right: 15px !important;
+	}
+	#slider{
+		height: 400px;
+		min-height: 400px;
+	}
+	#slider li .content_slider{
+		padding: 10px 35px;
+	}
+	.btnSlider{
+		padding: 10px 30px;
+    	font-size: 10pt;
+	}
+
+}
+
+@media (max-width: 1250px){
+    /*Index Code*/
+    .neg-margin{
+        background-color: #ffffff;
+        margin-top: 0;
+        margin-bottom: -20px;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .index-container{
+        padding: 50px;
+        border-radius: 0;
+        margin: 20px 0 0 0;
+        background-color: goldenrod;
+    }
+    
+    section{
+        margin-top: -70px;
+    }
+    .Service-container{
+        margin: 0;
+        padding: 50px;
+        border-radius: 0;
+        background-color: #f7983d;
+    }
+
+    .line{
+        padding-left: 100%;
+        background-color: #272b27;
+        height: 50px;
+    }
+
+    .hidden{
+        visibility: hidden;
+        padding: 0px;
+        margin: -60px 0 0 0;
+    }
+    /*End of Index Code*/
+    /*Register Code*/
+        /*Register Form*/
+        .lesser-margin{
+            width: 103%;
+            margin: 0;
+            border-radius: 0;
+        }
+        /*Table & Data*/   
+        .data-container{
+            margin: -16px 0 0 0;
+            border-radius: 0;
+            width: 103%;
+            margin-bottom: -12px;
+        }
+
+        .table{
+            width: 100%;
+        }
+
+}
+
+
+@media (max-width: 1100px) {
+    /*About us*/
+    .container-about{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+    .img-about-us{
+        margin-top: 30px;
+        width: 200px;
+    }
+    .container-img{
+        display: flex;
+        flex-direction: row;
+        margin-top: 25px;
+    }
+
+    .tagline{
+        margin-top: -20px;
+    }
+
+    .sm{
+        margin-top: 25px;
+    }
+}
